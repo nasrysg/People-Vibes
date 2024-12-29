@@ -25,7 +25,7 @@ h1 {
 .category {
     width: 100%; /* Se ajusta automáticamente al tamaño de la cuadrícula */
     aspect-ratio: 1; /* Cada cuadro será perfectamente cuadrado */
-    border: 2px dashed #ccc;
+    border: 1px solid black #ccc;
     border-radius: 10px;
     display: flex;
     justify-content: center;
