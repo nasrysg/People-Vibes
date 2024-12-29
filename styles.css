@@ -15,7 +15,7 @@ h1 {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-    gap: 5px; /* Espacio reducido entre cuadros */
+    gap: 0px; /* Espacio reducido entre cuadros */
     justify-content: center; /* Asegura que esté centrado horizontalmente */
     align-items: center;
     width: 300px; /* Reduce el ancho total de la cuadrícula */
