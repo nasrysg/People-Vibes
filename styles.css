@@ -4,6 +4,7 @@ body {
     background-color: #f9f9f9;
     margin: 0;
     padding: 20px;
+    overflow: hidden; /* Evita el scrolling vertical */
 }
 
 h1 {
@@ -14,32 +15,27 @@ h1 {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-    gap: 0; /* Sin espacio entre los cuadrados */
-    justify-items: stretch;
-    align-items: stretch;
-    width: 50%; /* Ajustamos el tamaño de la cuadrícula al 50% del ancho de la página */
-    margin: 0 auto; /* Centramos la cuadrícula en el sitio */
-    border: 2px solid #ccc; /* Opcional: borde alrededor de la cuadrícula */
-    border-radius: 10px; /* Opcional: esquinas redondeadas */
-    background-color: #fff; /* Opcional: color de fondo para la cuadrícula */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: agrega una sombra ligera */
-    padding: 10px; /* Opcional: espacio interno alrededor de la cuadrícula */
+    gap: 5px; /* Espacio reducido entre cuadros */
+    justify-content: center; /* Asegura que esté centrado horizontalmente */
+    align-items: center;
+    width: 300px; /* Reduce el ancho total de la cuadrícula */
+    margin: 0 auto; /* Centra la cuadrícula */
 }
 
 .category {
     width: 100%; /* Se ajusta automáticamente al tamaño de la cuadrícula */
-    aspect-ratio: 1; /* Hace que cada cuadro sea perfectamente cuadrado */
+    aspect-ratio: 1; /* Cada cuadro será perfectamente cuadrado */
     border: 2px dashed #ccc;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #888;
-    font-size: 16px;
+    font-size: 14px; /* Ajusta el tamaño del texto */
     background-color: #fdfdfd;
     position: relative;
     cursor: pointer;
-    overflow: hidden; /* Oculta cualquier parte de la imagen fuera del cuadrado */
+    overflow: hidden; /* Oculta las partes de la imagen fuera del cuadrado */
 }
 
 .category img {
@@ -50,8 +46,8 @@ h1 {
     left: 0;
     border-radius: 10px;
     width: 100%;
-    height: 100%; /* Forzamos que ocupe todo el cuadrado */
-    object-fit: cover; /* Recorta automáticamente el contenido */
+    height: 100%;
+    object-fit: cover; /* Recorta automáticamente las imágenes al cuadrado */
 }
 
 .category.dragover {
