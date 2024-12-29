@@ -15,18 +15,18 @@ h1 {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-    gap: 1px; /* Espacio reducido entre cuadros */
-    justify-content: center; /* Asegura que esté centrado horizontalmente */
+    gap: 0; /* Elimina los espacios entre cuadros */
+    justify-content: center; /* Centra la cuadrícula horizontalmente */
     align-items: center;
-    width: 300px; /* Reduce el ancho total de la cuadrícula */
+    width: 300px; /* Ajusta el ancho total de la cuadrícula */
     margin: 0 auto; /* Centra la cuadrícula */
 }
 
 .category {
     width: 100%; /* Se ajusta automáticamente al tamaño de la cuadrícula */
     aspect-ratio: 1; /* Cada cuadro será perfectamente cuadrado */
-    border: 1px solid black #ccc;
-    border-radius: 10px;
+    border: 2px dashed #ccc; /* Bordes opcionales */
+    border-radius: 0; /* Elimina bordes redondeados si no los quieres */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +35,7 @@ h1 {
     background-color: #fdfdfd;
     position: relative;
     cursor: pointer;
-    overflow: hidden; /* Oculta las partes de la imagen fuera del cuadrado */
+    overflow: hidden; /* Oculta las partes de la imagen fuera del cuadro */
 }
 
 .category img {
@@ -44,7 +44,7 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 10px;
+    border-radius: 0; /* Elimina bordes redondeados si no los quieres */
     width: 100%;
     height: 100%;
     object-fit: cover; /* Recorta automáticamente las imágenes al cuadrado */
